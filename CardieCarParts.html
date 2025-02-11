@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <style>
+
+        /*Styles for nav bar*/
         nav {
             font-family: 'Slim Jim', 'Impact', 'Arial Black', sans-serif;
             background: black;
@@ -17,27 +19,31 @@
             padding: 1rem;
            
         }
+
+        /*Hover effect*/
         a:hover {
             color:yellowgreen;
         }
 
+
+        /*Styling for my header section*/
+        /*Includes the logo and the slogan*/
         .header {
             width: 100%;
             height: 400px;
         }
-
         .header img {
             float: left;
             width: 400px;
             height: 400px;
         }
-
         .header h1 {
-            position: relative;
+            position: center;
             top: 18px;
             left: 10px;
         }
 
+        /*Styling for each of the text families*/
         h1 {
             font-size: 50px;
         }
@@ -54,15 +60,7 @@
             font-size: 20px;
         }
 
-        /*
-        header {
-            margin: 20px;
-            border: 20px;
-            padding: 20px;
-            width: 100%;
-        }
-        */
-
+        /*history box format*/
         .history {
             font-family: sans-serif;   
             margin: 20px;
@@ -70,6 +68,7 @@
             padding: 20px; 
         }
 
+        /*services box format*/
         .services {
             font-family: sans-serif;   
             margin: 20px;
@@ -77,6 +76,7 @@
             padding: 20px; 
         }
 
+        /*goals box format*/
         .goals {
             font-family: sans-serif;   
             margin: 20px;
@@ -84,6 +84,7 @@
             padding: 20px; 
         }
 
+        /*parts box format*/
         .parts {
             font-family: sans-serif;   
             margin: 20px;
@@ -91,11 +92,8 @@
             padding: 20px; 
         }
 
-        /*
-        .parts thead {
-            font-size: 30px;
-        }
-        */
+        /*table styling*/
+        /*Credit: Thor Pilegaard*/
         #Parts {text-align: center;}
 
         table{width: 50%; text-align: center; border-collapse: collapse;}
@@ -108,11 +106,7 @@
             background-color: #f2f2f2;
         }
 
-        .services li {
-            padding: 1rem;
-            border-left: 1px solid white;
-        }
-
+        /*media box format*/
         .media {
             font-family: sans-serif;   
             margin: 20px;
@@ -120,6 +114,7 @@
             padding: 20px; 
         }
 
+        /*footer box format*/
         .footer {
             font-family: sans-serif;   
             margin: 20px;
@@ -127,15 +122,33 @@
             padding: 20px; 
         }
 
+        /*search bar styling*/
+        /*Credit: https://www.w3schools.com/howto/howto_css_searchbar.asp*/
+        input {
+                float: right;
+                padding: 6px;
+                border: none;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+            }
+
+        /*Focus box styling*/
+        /*Credit: https://css-tricks.com/almanac/pseudo-selectors/f/focus/*/
+        textarea:focus {
+            background: pink;
+        }
+
+        /*background styling*/
         body {
-                font-family: 'Slim Jim', 'Impact', 'Arial Black', sans-serif;
-                background: black;
                 background: lightblue;
-                font-family: sans-serif;
             }
 
     </style>
+
+    <!--all the html-->
     <nav>
+        <!--Nav bar-->
         <ul>
             <li><a href="#Information">History</a></li>
             <li><a href="#Services">Services</a></li>
@@ -143,15 +156,23 @@
             <li><a href="#Parts">Parts</a></li>
             <li><a href="#Media">Media</a></li> |
             <li><a href="#footer">Contact Us</a></li>
+            <input type="text" placeholder="Search..">
+            <!--focus state-->
+            <textarea name="" id="" cols="" rows="" placeholder="Demo: click inside me (or tab to me) to focus"></textarea>
         </ul>
+        
     </nav>
 
     <body>
+
+        <!--header-->
         <div class="header">
-            <img src="Car Parts Logo.png" alt="logo" />
+            <!--logo-->
+            <img src="Car Parts Logo.png" alt="logo"/>
+            <!--image-->
             <h1 align="right">All the parts you need in one place!</h1>
         </div>
-            
+        
         <section id = "Information">
             <history>
                 <h2 align="center">History</h2>
@@ -206,11 +227,12 @@
         </section>
 
         <section id="Parts">
+            <!--Credit: Thor Pilegaard-->
             <parts>
+                <!--blurb above the table-->
                 <h2 align="center">Parts</h2>
                 <thead>Car Parts Inventory:</thead>
             </parts>
-
             <details>
                 <summary>
                     We are also happy to provide our cost/part <br>
@@ -221,7 +243,7 @@
             <table style="margin-left: auto; margin-right: auto;">
             <tbody>    
                 <div style="text-align: center">               
-                    <caption>(Prices may vary)</caption 
+                    <caption>(Prices may vary)</caption>
                     <colgroup>
                             <col style="background-color: lightgoldenrodyellow;">
                     </colgroup>
